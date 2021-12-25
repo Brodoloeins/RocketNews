@@ -1,0 +1,139 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', 'Work Sans';
+}
+
+body, html{
+    height: 100%;
+}
+
+/**/
+
+.center{
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    background-color: var(--body-bg-color);
+    height: 100%;
+}
+
+header img{
+    width: 100%;
+    max-width: 389px;
+    padding: 50px 30px;
+}
+
+.left h1{
+    color: var(--title-color);
+    padding: 36px 36px 14px 36px;
+}
+
+.left h3{
+    color: #fff;
+    font-size: 14px;
+    padding: 0 0 14px 36px;
+}
+
+.left p{
+    color: var(--text-color);
+    padding: 0 0 36px 36px;
+    font-size: 13px;
+}
+.left label{
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.left form{
+    padding: 0 0 36px 36px;
+}
+
+.left input{
+    position: absolute;
+    width: 56%;
+    height: 48px;
+    outline: none;
+    padding: 10px;
+}
+
+.left a{
+    padding: 0 0 0 36px;
+    color: var(--bg-button-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.left a img{
+    color: var(--bg-button-color);
+}
+
+.right{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/read_news.jpg);
+}
+
+@media screen and (max-width: 500px){
+    .left{
+        width: 100%;
+    }
+
+    header img{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .left h1{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .left h3{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .left p{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .left form{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+        padding-bottom: 5px;
+    }
+
+    .left input{
+        position: relative;
+        width: 100%;
+    }
+
+    .left a{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+
+    .right{
+        width: 0;
+    }
+}
