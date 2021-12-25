@@ -1,4 +1,4 @@
-# RocketSeat
+# RocketNews
 
 Ideia de projeto oriundo da plataforma de estudos Rocketseat
 
